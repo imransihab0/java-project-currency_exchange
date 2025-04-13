@@ -63,11 +63,12 @@ CurrencyExchangeJavaProject/
 
 ```bash
 javac -cp ".;mysql-connector-j-9.2.0.jar" *.java
-java -cp ".;mysql-connector-j-9.2.0.jar" Main```
+java -cp ".;mysql-connector-j-9.2.0.jar" Main
+```
 
 ### 🍎 On Mac/Linux:
 
+```bat
 javac -cp ".:mysql-connector-j-9.2.0.jar" *.java
 java -cp ".:mysql-connector-j-9.2.0.jar" Main
-
-
+```
