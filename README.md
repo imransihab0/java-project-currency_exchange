@@ -47,7 +47,7 @@ A simple Java console app that connects to a MySQL database (via XAMPP) to manag
 
 ##  📂 Folder Structure
 
-CurrencyExchangeJavaProject/
+CurrencyExchangeJavaProject/ <br>
 ├── Main.java                  <!-- 💻 App entry point --> <br>
 ├── DBConnection.java          <!-- 🔌 MySQL connection handler --> <br>
 ├── CurrencyService.java       <!-- 📦 Logic for all features --> <br>
