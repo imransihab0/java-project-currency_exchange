@@ -47,19 +47,27 @@ A simple Java console app that connects to a MySQL database (via XAMPP) to manag
 
 ##  📂 Folder Structure
 
-``` CurrencyExchangeJavaProject/ ├── Main.java // 💻 App entry point ├── DBConnection.java // 🔌 MySQL connection handler ├── CurrencyService.java // 📦 Logic for all features ├── currencydb.sql // 🗃️ Database + table + sample data ├── mysql-connector-j-9.2.0.jar // 🧪 JDBC Driver └── README.md // 📖 You are here ```
+CurrencyExchangeJavaProject/
+├── Main.java                  <!-- 💻 App entry point -->
+├── DBConnection.java          <!-- 🔌 MySQL connection handler -->
+├── CurrencyService.java       <!-- 📦 Logic for all features -->
+├── currencydb.sql             <!-- 🗃️ Database + table + sample data -->
+├── mysql-connector-j-9.2.0.jar <!-- 🧪 JDBC Driver -->
+└── README.md                  <!-- 📖 You are here -->
 
 ---
 
-## ⚙️ Setup Instructions
+## ⚙️ How to Compile & Run
 
-1. Start **Apache** and **MySQL** from **XAMPP**.
-2. Import `currency_db.sql` using **phpMyAdmin** or MySQL CLI.
-3. Open `DatabaseConnector.java` and update database credentials if needed.
-4. Compile and run the application:
+### 🪟 On Windows CMD:
 
 ```bash
-javac Main.java
-java Main
+javac -cp ".;mysql-connector-j-9.2.0.jar" *.java
+java -cp ".;mysql-connector-j-9.2.0.jar" Main```
+
+### 🍎 On Mac/Linux:
+
+javac -cp ".:mysql-connector-j-9.2.0.jar" *.java
+java -cp ".:mysql-connector-j-9.2.0.jar" Main
 
 
