@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                             http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!-- Main file starts from here -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- CurrencyExchangeServlet -->
+    <servlet>
+        <servlet-name>CurrencyExchangeServlet</servlet-name>
+        <servlet-class>CurrencyExchangeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CurrencyExchangeServlet</servlet-name>
+        <url-pattern>/currencyExchange</url-pattern>
+    </servlet-mapping>
+
+    <!-- ViewExchangeRates -->
+    <servlet>
+        <servlet-name>ViewExchangeRatesServlet</servlet-name>
+        <servlet-class>ViewExchangeRatesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewExchangeRatesServlet</servlet-name>
+        <url-pattern>/viewExchangeRates</url-pattern>
+    </servlet-mapping>
+
+    <!-- viewExchangeRates - css -->
+
+    <!-- <servlet>
+        <servlet-name>ViewExchangeRatesServlet</servlet-name>
+        <servlet-class>ViewExchangeRatesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewExchangeRatesServlet</servlet-name>
+        <url-pattern>/viewExchangeRates</url-pattern>
+    </servlet-mapping> -->
+
+    <!-- AddCurrencyServlet -->
+    <servlet>
+        <servlet-name>AddCurrencyServlet</servlet-name>
+        <servlet-class>AddCurrencyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddCurrencyServlet</servlet-name>
+        <url-pattern>/addCurrency</url-pattern>
+    </servlet-mapping>
+
+    <!-- UpdateCurrencyRate -->
+    <servlet>
+        <servlet-name>UpdateCurrencyRateServlet</servlet-name>
+        <servlet-class>UpdateCurrencyRateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateCurrencyRateServlet</servlet-name>
+        <url-pattern>/updateCurrencyRate</url-pattern>
+    </servlet-mapping>
+
+    <!-- DeleteCurrency -->
+    <servlet>
+        <servlet-name>DeleteCurrencyServlet</servlet-name>
+        <servlet-class>DeleteCurrencyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteCurrencyServlet</servlet-name>
+        <url-pattern>/deleteCurrency</url-pattern>
+    </servlet-mapping>
+
+</web-app>
